@@ -9,7 +9,7 @@ function App() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:3000/extract-transcript', {
+        const response = await fetch('https://youtube-transcript-backend.onrender.com/extract-transcript', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
